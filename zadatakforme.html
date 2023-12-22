@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1>This is my fifth page</h1>
+<b>
+<div style="float:left;">
+    <form>
+    <fieldset>
+        <legend>General info</legend>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <br>
+        <label for="phone">Phone</label><br>        
+        <input type="tel" id="phone" name="phone"><br>
+        <br>
+        <label for="mail">Email</label><br>
+        <input type="mail" id="mail" name="mail"><br>
+        <br>
+        <label for="date">Date of birth</label><br>
+        <input type="date" id="date" name="date" ><br>
+        <br> 
+        <label for="textarea">Short introduction</label><br>
+        <textarea rows="4" cols="25" id="textarea" name="textarea"></textarea><br>
+    </fieldset>           
+            <fieldset>
+            <legend>Student status</legend>
+            <label for="regular">Regular</label>
+            <input type="checkbox" id="regular" name="regular>">
+            <label for="parttime">Part time</label>
+            <input type="checkbox" id="parttime" name="parttime">
+            <label for="nstudent">Not student</label>
+            <input type="checkbox" id="nstudent" name="nstudent">
+            </fieldset>
+    </form>
+</div>
+<div style="float:left">
+<form>
+   <fieldset>
+    <legend>Address</legend>
+    <label for="country">Country</label><br>
+    <br>
+    <select id="country" name="country">
+        <option value="Bosnia">Bosnia</option>
+        <option value="Croatia">Croatia</option>
+        <option value="USA">USA</option>
+        <option value="TUrkey">Turkey</option><br>
+        </select>
+        <br>
+        <br>
+        
+        
+        <label for="city">City</label><br>
+        <br>
+        <select  name="city" id="city"><br>
+        <optgroup label="Bosnia">
+        <option value="Sarajevo">Sarajevo</option>
+        <option value="Visoko">Visoko</option>
+        </optgroup>
+        <optgroup label="USA">
+        <option value="LA">Los Angeles</option>
+        <option value="ny">New York</option>
+        </optgroup>
+        <optgroup label="Austria">
+        <option value="Vienna">Vienna</option>
+        </optgroup>       
+        <optgroup label="Hungary">
+        <option value="Budapest">Budapest</option>
+        </optgroup>    
+        </select>
+        </fieldset>
+<br>
+<fieldset>
+<br>
+<legend>Credentials</legend>
+<label for="uname">Username</label><br>
+<input type="text" id="uname" name="uname"><br>
+<br>
+<label for="password">Password</label><br>
+<input type="text" id="password" name="password"><br>
+</fieldset>
+<br>
+
+
+<div style="text-align: center">
+<pre><button type="submit">     Submit     </button></pre>
+</div>
+
+</form>
+</div>
+
+</body> 
+
+</html>
