@@ -7,7 +7,9 @@ const hideObjaviOglas = () => {
 }
 
 const ucitajFooter = () => {
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     await ucitajFooter();
+    hideObjaviOglas();
 }, false); 
-}

@@ -191,10 +191,8 @@ display: flex;
 
 
 .body-section {
-    display: flex;
-    justify-content: center;
-    
-    padding: 0 0 1rem 0;
+  display: flex;
+  justify-content: center;
 }
 .w-100 {
   width: 100%;
@@ -311,4 +309,50 @@ display: flex;
     padding: 0.75rem;
     font-size: 15px;
     box-sizing: border-box;
+}
+
+.li-card img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+
+.pb-3 {
+  padding-bottom: 1rem;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.me-3 {
+  margin-right: 1rem;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+.rounded-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon-color-1 {
+  background-color: #3276C0;
+}
+
+.icon-color-2 {
+  background-color: #6A9F42;
+}
+
+.icon-button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }

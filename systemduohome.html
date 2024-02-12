@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link href="https://fonts.cdnfonts.com/css/geomanist" rel="stylesheet">
-        <link rel="stylesheet" href="systemduo.css">
-        <meta charset="UTF-8">
-        <title>SysDuo</title>
-        <link rel="icon" href="logoOnlySysDuo.png" type="image/png">
-        <script src="https://kit.fontawesome.com/95fcb9e068.js" crossorigin="anonymous"></script>
-        <script src="systemduo.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/geomanist" rel="stylesheet">
+    <link rel="stylesheet" href="systemduo.css">
+    <meta charset="UTF-8">
+    <title>SysDuo</title>
+    <link rel="icon" href="logoOnlySysDuo.png" type="image/png">
+    <script src="https://kit.fontawesome.com/95fcb9e068.js" crossorigin="anonymous"></script>
+    <script src="systemduo.js"></script>
 </head>
 
 <body>
@@ -19,15 +19,15 @@
                     <button class="icon-button" onclick="hideObjaviOglas()"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <hr color="#f9f9f9"/>
-                <div class="flex-wrap my-3">
-                    <a href="./dodajvozilo.html" class="flex-two display-flex ps-2 align-items-center">
-                        <div class="rounded-icon-wrapper icon-color-1">
+                <div class="flex-wrap my-3 d-flex p-3">
+                    <a href="./dodajvozilo.html" class="me-3 d-flex align-items-center">
+                        <div class="rounded-icon-wrapper icon-color-1 me-2">
                             <i class="fa-solid fa-car-side"></i>
                         </div>
                         <span class="ps-2">Automobili</span>
                     </a>
-                    <a href="./dodajnekretninu.html" class="flex-two display-flex align-items-center">
-                        <div class="rounded-icon-wrapper icon-color-2">
+                    <a href="./dodajnekretninu.html" class="d-flex align-items-center">
+                        <div class="rounded-icon-wrapper icon-color-2 me-2 ">
                             <i class="fa-solid fa-building"></i>
                         </div>
                         <span class="ps-2">Nekretnine</span>
@@ -39,7 +39,7 @@
     <header>
         <div class="container d-flex justify-content-beetween align-items-center py-2">
             <a href="olxhome.html" class="d-flex">
-                <img src="sysDuo.png" width="160" height="33" alt="logo">
+                <img src="./images/sysDuo.png" width="160" height="33" alt="logo">
             </a>
 
         <nav>
@@ -56,71 +56,53 @@
                 <input type="text" placeholder="  Pretražite...">
                 <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
             </form>
-            <button class="add-btn">
+            <button onclick="showObjaviOglasOnClick()" class="add-btn">
                 <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 <pre>  Objavi oglas</pre>
             </button>
         </div>
-
-
-        
     </header>
-<section class="body-section">
-    <div class="container">
-        <div class="w-100">
-            <div class="heading-container">
-                <h1>Najtraženije</h1>
-                <div class="arrow-buttons-container">
-                    <button class="button-circle">
-                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-                    </button>
-                    <button class="button-circle">
-                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-                    </button>
+    <section class="body-section">
+        <div class="container">
+            <div class="w-100">
+                <div class="heading-container">
+                    <h1>Najtraženije</h1>
+                    <div class="arrow-buttons-container">
+                        <button class="button-circle">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <button class="button-circle">
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <ol class="kartice ol-h">
-                <li class="li-h"><a href="item">
-                                <card>
-                                    <img class="img-h1" src="./images/items/placeholder.png">
-                                    <div class="card-body">
-                                        <h1>
-                                            ARTIKAL 1
-                                        </h1>
-                                        <span class="tag">Novo</span>
-                                        <div class="card-end">
-                                            <small>Prije 10 sati</small>
-                                            <span><b>500 KM</b></span>
+                <ol class="kartice ol-h">
+                    <li class="li-h"><a href="item">
+                                    <card>
+                                        <img class="img-h1" src="./images/items/placeholder.png">
+                                        <div class="card-body">
+                                            <h1>
+                                                ARTIKAL 1
+                                            </h1>
+                                            <span class="tag">Novo</span>
+                                            <div class="card-end">
+                                                <small>Prije 10 sati</small>
+                                                <span><b>500 KM</b></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </card>
-                            </a></li>
-                <li class="li-h"><a href="item">
-                    <card>
-                        <img class="img-h1" src="./images/items/placeholder.png">
-                        <div class="card-body">
-                            <h1>
-                                ARTIKAL 2
-                            </h1>
-                            <span class="tag">Novo</span>
-                            <div class="card-end">
-                                <small>Prije 13 sati</small>
-                                <span><b>210 KM</b></span>
-                            </div>
-                        </div>
-                    </card>
-                    </a></li>
+                                    </card>
+                                </a></li>
                     <li class="li-h"><a href="item">
                         <card>
                             <img class="img-h1" src="./images/items/placeholder.png">
                             <div class="card-body">
                                 <h1>
-                                    ARTIKAL 3
+                                    ARTIKAL 2
                                 </h1>
                                 <span class="tag">Novo</span>
                                 <div class="card-end">
-                                    <small>Prije 24 sati</small>
-                                    <span><b>50 KM</b></span>
+                                    <small>Prije 13 sati</small>
+                                    <span><b>210 KM</b></span>
                                 </div>
                             </div>
                         </card>
@@ -130,12 +112,12 @@
                                 <img class="img-h1" src="./images/items/placeholder.png">
                                 <div class="card-body">
                                     <h1>
-                                        ARTIKAL 4
+                                        ARTIKAL 3
                                     </h1>
                                     <span class="tag">Novo</span>
                                     <div class="card-end">
-                                        <small>Prije 7 sati</small>
-                                        <span><b>999 KM</b></span>
+                                        <small>Prije 24 sati</small>
+                                        <span><b>50 KM</b></span>
                                     </div>
                                 </div>
                             </card>
@@ -145,12 +127,12 @@
                                     <img class="img-h1" src="./images/items/placeholder.png">
                                     <div class="card-body">
                                         <h1>
-                                            ARTIKAL 5
+                                            ARTIKAL 4
                                         </h1>
                                         <span class="tag">Novo</span>
                                         <div class="card-end">
-                                            <small>Prije 12 sati</small>
-                                            <span><b>16 KM</b></span>
+                                            <small>Prije 7 sati</small>
+                                            <span><b>999 KM</b></span>
                                         </div>
                                     </div>
                                 </card>
@@ -160,12 +142,12 @@
                                         <img class="img-h1" src="./images/items/placeholder.png">
                                         <div class="card-body">
                                             <h1>
-                                                ARTIKAL 6
+                                                ARTIKAL 5
                                             </h1>
                                             <span class="tag">Novo</span>
                                             <div class="card-end">
-                                                <small>Prije 11 sati</small>
-                                                <span><b>540 KM</b></span>
+                                                <small>Prije 12 sati</small>
+                                                <span><b>16 KM</b></span>
                                             </div>
                                         </div>
                                     </card>
@@ -175,428 +157,222 @@
                                             <img class="img-h1" src="./images/items/placeholder.png">
                                             <div class="card-body">
                                                 <h1>
-                                                    ARTIKAL 7
+                                                    ARTIKAL 6
                                                 </h1>
                                                 <span class="tag">Novo</span>
                                                 <div class="card-end">
-                                                    <small>Prije 18 sati</small>
-                                                    <span><b>70 KM</b></span>
+                                                    <small>Prije 11 sati</small>
+                                                    <span><b>540 KM</b></span>
                                                 </div>
                                             </div>
                                         </card>
                                         </a></li>
-            </ol>
-        </div>
-    </div>
-
-
-</section>
-<section class="body-section">
-    <div class="container">
-        <div class="w-100">
-            <div class="heading-container">
-                <h1><b>Izdvojeni Oglasi</b></h1>
-                <button class="button-empty">
-                    <i class="fa-solid fa-grip" aria-hidden="true"></i>
-                    Filtriraj izdvojene oglase
-                </button>
+                                        <li class="li-h"><a href="item">
+                                            <card>
+                                                <img class="img-h1" src="./images/items/placeholder.png">
+                                                <div class="card-body">
+                                                    <h1>
+                                                        ARTIKAL 7
+                                                    </h1>
+                                                    <span class="tag">Novo</span>
+                                                    <div class="card-end">
+                                                        <small>Prije 18 sati</small>
+                                                        <span><b>70 KM</b></span>
+                                                    </div>
+                                                </div>
+                                            </card>
+                                            </a></li>
+                </ol>
             </div>
-            <ol class="lista-kartica-grid ol-f">
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-                <li class="li-grid">
-                    <a href="item">
-                        <card>
-                            <img src="./images/items/placeholder.png">
-                            <div class="card-body">
-                                <h1>
-                                    Artikal 1
-                                </h1>
-                                <span class="tag">Novo</span>
-                                <div class="card-end">
-                                    <small>Prije 20 sati</small>
-                                    <span><b>200,20 KM</b></span>
-                                </div>
-                            </div>
-                        </card>
-                    </a>
-                </li>
-
-                
-            </ol>
         </div>
-    </div>
-</section>
-<footer>
-    <div class="footer-container">
-        <div class="footer-liste">
-        <ol class="ol-f">
-            <li class="lif">INFORMACIJE I KONTAKT</li>
-            <li class="lif"><a href="onama.html" class="a-f">O nama</a></li>
-            <li class="lif"><a href="uslovi.html" class="a-f">Uslovi korištenja</a></li>
-            <li class="lif"><a href="sigurnost.html" class="a-f">Sigurnost</a></li>
-        </ol>
-        <ol class="ol-f">
-            <li class="lif">OSTALI LINKOVI</li>
-            <li class="lif"><a href="blog.html" class="a-f">SysDuo Blog</a></li>
-            <li class="lif"><a href="facebook.html" class="a-f">SysDuo Facebook</a></li>
-            <li class="lif"><a href="posao.html" class="a-f">Pridruži se SysDuo timu!</a></li>
-        </ol>
-        <ol class="ol-f">
-            <li class="lif">SYSTEMDUO DOSTAVA</li>
-            <li class="lif"><a href="dostava.html" class="a-f">Šta je Systemduo dostava ?</a></li>
-        </ol>
-        <ol class="ol-f">
-            <li class="lif">PODRŠKA</li>
-            <li class="lif"><a href="podrska.html" class="a-f">Podrška korisnicima</a></li>
-        </ol>
-    
-    </div>
-        <div class="footer-copy">
-            <p>Copyright © 2023 - 2024 Systemduo.Sva prava zadržana.</p>
-        
-    </div>
-    </div>
 
-</footer>
+
+    </section>
+
+    <section class="body-section">
+        <div class="w-100 justify-content-center d-flex pb-3">
+            <div class="container">
+                <div class="heading-container">
+                    <h1><b>Izdvojeni Oglasi</b></h1>
+                    <button class="button-empty">
+                        <i class="fa-solid fa-grip" aria-hidden="true"></i>
+                        Filtriraj izdvojene oglase
+                    </button>
+                </div>
+                <ol class="lista-kartica-grid ol-f">
+                    <li class="li-grid">
+                        <a href="item">
+                            <card class="li-card" >
+                                <img src="./images/items/placeholder.png">
+                                <div class="card-body">
+                                    <h1>
+                                        Artikal 1
+                                    </h1>
+                                    <span class="tag">Novo</span>
+                                    <div class="card-end">
+                                        <small>Prije 20 sati</small>
+                                        <span><b>200,20 KM</b></span>
+                                    </div>
+                                </div>
+                            </card>
+                        </a>
+                    </li>
+                    <li class="li-grid">
+                        <a href="item">
+                            <card class="li-card" >
+                                <img src="./images/items/placeholder.png">
+                                <div class="card-body">
+                                    <h1>
+                                        Artikal 1
+                                    </h1>
+                                    <span class="tag">Novo</span>
+                                    <div class="card-end">
+                                        <small>Prije 20 sati</small>
+                                        <span><b>200,20 KM</b></span>
+                                    </div>
+                                </div>
+                            </card>
+                        </a>
+                    </li>
+                    <li class="li-grid">
+                        <a href="item">
+                            <card class="li-card" >
+                                <img src="./images/items/placeholder.png">
+                                <div class="card-body">
+                                    <h1>
+                                        Artikal 1
+                                    </h1>
+                                    <span class="tag">Novo</span>
+                                    <div class="card-end">
+                                        <small>Prije 20 sati</small>
+                                        <span><b>200,20 KM</b></span>
+                                    </div>
+                                </div>
+                            </card>
+                        </a>
+                    </li>
+                    <li class="li-grid">
+                        <a href="item">
+                            <card class="li-card" >
+                                <img src="./images/items/placeholder.png">
+                                <div class="card-body">
+                                    <h1>
+                                        Artikal 1
+                                    </h1>
+                                    <span class="tag">Novo</span>
+                                    <div class="card-end">
+                                        <small>Prije 20 sati</small>
+                                        <span><b>200,20 KM</b></span>
+                                    </div>
+                                </div>
+                            </card>
+                        </a>
+                    </li>
+                    <li class="li-grid">
+                        <a href="item">
+                            <card class="li-card" >
+                                <img src="./images/items/placeholder.png">
+                                <div class="card-body">
+                                    <h1>
+                                        Artikal 1
+                                    </h1>
+                                    <span class="tag">Novo</span>
+                                    <div class="card-end">
+                                        <small>Prije 20 sati</small>
+                                        <span><b>200,20 KM</b></span>
+                                    </div>
+                                </div>
+                            </card>
+                        </a>
+                    </li>
+                    <li class="li-grid">
+                        <a href="item">
+                            <card class="li-card" >
+                                <img src="./images/items/placeholder.png">
+                                <div class="card-body">
+                                    <h1>
+                                        Artikal 1
+                                    </h1>
+                                    <span class="tag">Novo</span>
+                                    <div class="card-end">
+                                        <small>Prije 20 sati</small>
+                                        <span><b>200,20 KM</b></span>
+                                    </div>
+                                </div>
+                            </card>
+                        </a>
+                    </li>
+                    <li class="li-grid">
+                        <a href="item">
+                            <card class="li-card" >
+                                <img src="./images/items/placeholder.png">
+                                <div class="card-body">
+                                    <h1>
+                                        Artikal 1
+                                    </h1>
+                                    <span class="tag">Novo</span>
+                                    <div class="card-end">
+                                        <small>Prije 20 sati</small>
+                                        <span><b>200,20 KM</b></span>
+                                    </div>
+                                </div>
+                            </card>
+                        </a>
+                    </li>
+                    <li class="li-grid">
+                        <a href="item">
+                            <card class="li-card" >
+                                <img src="./images/items/placeholder.png">
+                                <div class="card-body">
+                                    <h1>
+                                        Artikal 1
+                                    </h1>
+                                    <span class="tag">Novo</span>
+                                    <div class="card-end">
+                                        <small>Prije 20 sati</small>
+                                        <span><b>200,20 KM</b></span>
+                                    </div>
+                                </div>
+                            </card>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-liste">
+            <ol class="ol-f">
+                <li class="lif">INFORMACIJE I KONTAKT</li>
+                <li class="lif"><a href="onama.html" class="a-f">O nama</a></li>
+                <li class="lif"><a href="uslovi.html" class="a-f">Uslovi korištenja</a></li>
+                <li class="lif"><a href="sigurnost.html" class="a-f">Sigurnost</a></li>
+            </ol>
+            <ol class="ol-f">
+                <li class="lif">OSTALI LINKOVI</li>
+                <li class="lif"><a href="blog.html" class="a-f">SysDuo Blog</a></li>
+                <li class="lif"><a href="facebook.html" class="a-f">SysDuo Facebook</a></li>
+                <li class="lif"><a href="posao.html" class="a-f">Pridruži se SysDuo timu!</a></li>
+            </ol>
+            <ol class="ol-f">
+                <li class="lif">SYSTEMDUO DOSTAVA</li>
+                <li class="lif"><a href="dostava.html" class="a-f">Šta je Systemduo dostava ?</a></li>
+            </ol>
+            <ol class="ol-f">
+                <li class="lif">PODRŠKA</li>
+                <li class="lif"><a href="podrska.html" class="a-f">Podrška korisnicima</a></li>
+            </ol>
+        
+        </div>
+            <div class="footer-copy">
+                <p>Copyright © 2023 - 2024 Systemduo.Sva prava zadržana.</p>
+            
+        </div>
+        </div>
+
+    </footer>
 
 </body>
 </html>
