@@ -2,14 +2,40 @@
 <html>
 <head>
         <link href="https://fonts.cdnfonts.com/css/geomanist" rel="stylesheet">
-        <link rel="stylesheet" href="olx.css">
+        <link rel="stylesheet" href="systemduo.css">
         <meta charset="UTF-8">
         <title>SysDuo</title>
         <link rel="icon" href="logoOnlySysDuo.png" type="image/png">
         <script src="https://kit.fontawesome.com/95fcb9e068.js" crossorigin="anonymous"></script>
+        <script src="systemduo.js"></script>
 </head>
 
 <body>
+    <div id="modal" class="modal-container">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Objavite oglas</h1>
+                    <button class="icon-button" onclick="hideObjaviOglas()"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <hr color="#f9f9f9"/>
+                <div class="flex-wrap my-3">
+                    <a href="./dodajvozilo.html" class="flex-two display-flex ps-2 align-items-center">
+                        <div class="rounded-icon-wrapper icon-color-1">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <span class="ps-2">Automobili</span>
+                    </a>
+                    <a href="./dodajnekretninu.html" class="flex-two display-flex align-items-center">
+                        <div class="rounded-icon-wrapper icon-color-2">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <span class="ps-2">Nekretnine</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container d-flex justify-content-beetween align-items-center py-2">
             <a href="olxhome.html" class="d-flex">
@@ -28,7 +54,7 @@
         <div class="container d-flex">
             <form>
                 <input type="text" placeholder="  Pretražite...">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
             </form>
             <button class="add-btn">
                 <i class="fa-solid fa-plus" aria-hidden="true"></i>
