@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="https://fonts.cdnfonts.com/css/geomanist" rel="stylesheet">
+        <link rel="stylesheet" href="dodavanjeartikla.css">
+        <meta charset="UTF-8">
+        <title>SysDuo</title>
+        <link rel="icon" href="data:image/png;base64,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" type="image/png">
+        <script src="https://kit.fontawesome.com/95fcb9e068.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header>
+    <div class="container d-flex justify-content-beetween align-items-center py-2">
+        <a href="olxhome.html" class="d-flex">
+            <img src="data:image/png;base64,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" width="160" height="33" alt="logo">
+        </a>
+
+    <nav>
+        <ul>
+            <li><a href="olxhome.html" class="nav-link">Početna</a></li>
+            <li><a href="olxhome.html" class="nav-link">Kategorije</a></li>
+            <li><a href="olxhome.html" class="nav-link">Prijavi se</a></li>
+        </ul>
+    </nav>
+
+    </div>
+    <div class="container d-flex">
+        <form>
+            <input type="text" placeholder="  Pretražite...">
+            <!--<i class="fa-solid fa-magnifying-glass"></i>-->
+        </form>
+        <button class="add-btn">
+            <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            <pre>  Objavi oglas</pre>
+        </button>
+    </div>
+
+
+    
+</header>
+<main class="body-section">
+    <div class="article-container">
+        <div class="lijeva-strana">
+            <div class="opis-artikla">
+            <h1>Veoma dobar artikal<br>16.000 KM</h1>
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg">    
+        </div>
+            <div class="opis-artikla">
+
+                <ul class="d-flex m-list-2 mb-3 lista-artikla">
+                    <li class="li-a">
+                        <label class="tag-item">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            Sarajevo, Novi Grad
+                        </label>
+                    </li>
+                    <li class="li-a">
+                        <label class="tag-item">
+                            <i class="fa-solid fa-tag" aria-hidden="true"></i>
+                            Korišteno
+                        </label>
+                    </li>
+                    <li class="li-a">
+                        <label class="tag-item">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                            Obnovljeno: 20.2.2024
+                        </label>
+                    </li>
+                    <li class="li-a">
+                        <label class="tag-item">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                            21451253
+                        </label>
+                    </li>
+                    <li class="li-a">
+                        <label class="tag-item">
+                            <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                            Pregledi: 20232
+                        </label>
+                    </li>
+                </ul>
+                <hr>
+                <ul id="tags-list" class="icon-list d-flex flex-wrap">
+                    <li class="mt-2 p-2 border border-radius d-flex align-items-center flex-two">
+                        <i class="fa-solid fa-car p-2" aria-hidden="true"></i>
+                        <div class="d-flex flex-column">
+                            <span>Proizvodjac</span>
+                            <span><b>Nissan</b></span>
+                        </div>
+                    </li>
+                    <li class="mt-2 p-2 ms-2 border border-radius d-flex align-items-center flex-two">
+                        <i class="fa-solid fa-car-on p-2" aria-hidden="true"></i>
+                        <div class="d-flex flex-column">
+                            <span>Model</span>
+                            <span><b>Qashqai</b></span>
+                        </div>
+                    </li>
+                    <li class="mt-2 p-2 border border-radius d-flex align-items-center flex-two">
+                        <i class="fa-solid fa-gas-pump p-2" aria-hidden="true"></i>
+                        <div class="d-flex flex-column">
+                            <span>Gorivo</span>
+                            <span><b>Dizel</b></span>
+                        </div>
+                    </li>
+                    <li class="mt-2 p-2 ms-2 border border-radius d-flex align-items-center flex-two">
+                        <i class="fa-solid fa-road p-2" aria-hidden="true"></i>
+                        <div class="d-flex flex-column">
+                            <span>Kilometraža</span>
+                            <span><b>100000km</b></span>
+                        </div>
+                    </li>
+                    <li class="mt-2 p-2 border border-radius d-flex align-items-center flex-two">
+                        <i class="fa-solid fa-clipboard-check p-2" aria-hidden="true"></i>
+                        <div class="d-flex flex-column">
+                            <span>Kubikaža</span>
+                            <span><b>2.0</b></span>
+                        </div>
+                    </li>
+                    <li class="mt-2 p-2 ms-2 border border-radius d-flex align-items-center flex-two">
+                        <i class="fa-solid fa-gauge-simple-high p-2" aria-hidden="true"></i>
+                        <div class="d-flex flex-column">
+                            <span>Snaga Motora</span>
+                            <span><b>100kW</b></span>
+                        </div>
+                    </li>
+                    <li class="mt-2 p-2 border border-radius d-flex align-items-center flex-two">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 14h-3v2h3zm3 7H3V11l8-8h10a1 1 0 0 1 1 1zM11.83 5l-6 6H20V5z"></path></svg>
+                        <div class="d-flex flex-column">
+                            <span>Broj vrata</span>
+                            <span><b>3/4</b></span>
+                        </div>
+                    </li>
+                    <li class="mt-2 p-2 ms-2 border border-radius d-flex align-items-center flex-two">
+                        <i class="fa-solid fa-calendar p-2" aria-hidden="true"></i>
+                        <div class="d-flex flex-column">
+                            <span>Godiste</span>
+                            <span><b>2014</b></span>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="opis-artikla">
+                <h1>Detaljan opis</h1>
+                <pre id="description">Nove zimski gume DOT 23 tek stavljene.
+
+                    Na prodaju Nissan Qashqai 2.0 dCI.
+                    Nissanov motor sa lancem, u odličnom stanju.
+                    Motor i mjenjač perfektni, vuče sve rade.
+                    
+                    4x4, automatik, navigacija, panorama, zadnji parking senzori, komande na volanu, tempomat, preklapanje retrovizora, gumene i platnene patosnice, kadica u gepeku, dva seta felgi i guma, maglenke naprijed i nazad.
+                    
+                    Auto je redovno servisiran, posjeduje servisnu od prvog dana.
+                    Posljednji servis rađen prije mjesec dana u GumaM u Sarajevu.
+                    
+                    Kupljen je nov u BiH, nije iz uvoza.
+                    Ja sam trenutno četvrti vlasnik.
+                    
+                    Auto ima dosta opreme, jako je udoban i lagan za voziti.
+                    
+                    Na autu su zimske gume na felgama od 16" a uz njega dođu i ljetne gume i felge 17".
+                    
+                    U autu je stav nov akumulator 17. 10. 2023.
+                    
+                    Registrovan do 7. mjeseca 2024.
+                    
+                    Prodaja zbog kupovine novog vozila.
+                    
+                    Može zamjena za automobil do 5.000 KM.
+                    Navedena cijena je za keš, u zamjeni 20.000.
+                    
+                    Navedena cijena je važeća do kraja sedmice.
+                    
+                    Sve informacije na broj telefona 066 296 040.
+                                            </pre>
+
+            </div>
+        </div>
+        <div class="sticky-container">
+            <h1>Korisnik</h1>
+            <div class="d-flex">
+            <div class="circle-avatar"></div>
+            <div class="d-flex flex-column justify-content-center ms-2">
+                <b>Sakib Sakic</b>
+                <small>Online prije 18 minuta</small>
+            </div>
+            </div>
+
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-liste">
+        <ol class="ol-f">
+            <li class="lif">INFORMACIJE I KONTAKT</li>
+            <li class="lif"><a href="onama.html" class="a-f">O nama</a></li>
+            <li class="lif"><a href="uslovi.html" class="a-f">Uslovi korištenja</a></li>
+            <li class="lif"><a href="sigurnost.html" class="a-f">Sigurnost</a></li>
+        </ol>
+        <ol class="ol-f">
+            <li class="lif">OSTALI LINKOVI</li>
+            <li class="lif"><a href="blog.html" class="a-f">SysDuo Blog</a></li>
+            <li class="lif"><a href="facebook.html" class="a-f">SysDuo Facebook</a></li>
+            <li class="lif"><a href="posao.html" class="a-f">Pridruži se SysDuo timu!</a></li>
+        </ol>
+        <ol class="ol-f">
+            <li class="lif">SYSTEMDUO DOSTAVA</li>
+            <li class="lif"><a href="dostava.html" class="a-f">Šta je Systemduo dostava ?</a></li>
+        </ol>
+        <ol class="ol-f">
+            <li class="lif">PODRŠKA</li>
+            <li class="lif"><a href="podrska.html" class="a-f">Podrška korisnicima</a></li>
+        </ol>
+    
+    </div>
+        <div class="footer-copy">
+            <p>Copyright © 2023 - 2024 Systemduo.Sva prava zadržana.</p>
+        
+    </div>
+    </div>
+
+</footer>
+
+</body>
+</html>

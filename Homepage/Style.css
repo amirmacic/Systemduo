@@ -1,0 +1,314 @@
+@import url(./geomanist/stylesheet.css);
+
+* {
+  font-family: Geomanist,sans-serif;
+  
+}
+.modal-container {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,.2);
+  z-index: 999;
+  opacity: 1;
+}
+
+.modal {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.modal-content {
+  background-color: white;
+  width: 600px;
+  box-shadow: 0 20px 60px -2px rgba(27,33,58,.4);
+  border-radius: 0.5rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+.modal-header h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.modal-header i {
+  scale: 2;
+}
+
+.container {
+  width: 1200px;
+}
+body {
+  margin:0;
+}
+
+header {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* align items jedno ispod drugog 
+justify content jedno pored drugog  */
+
+.d-flex {
+  display:flex;
+}
+
+.justify-content-beetween {
+justify-content: space-between;
+}
+
+.align-items-center{
+  align-items: center;
+}
+.justify-content-center{
+justify-content: center;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+.nav-link {
+  margin: 0.5em;
+  font-weight: 800;
+}
+.nav-link:hover{
+    color: #44EAC2 !important;
+  }
+
+a {
+  text-decoration: none;
+  color:black;
+}
+form{
+  display: flex;
+  flex-grow: 1;
+}
+input {
+  width: 95%;
+  display: flex;
+  box-shadow: 0 0 6px rgba(0,0,0,.1);
+}
+
+.add-btn {
+  margin-left: 1rem;
+  background: rgb(0, 47, 52);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 0.675rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn:hover {
+  background-color: #44EAC2 !important;
+  color: #2c343f;
+  font-weight: 600;
+}
+.footer-container{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex: 1 0 100%;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+footer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #002f34;
+   
+  
+}
+
+.ol-f{
+  list-style: none;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.footer-liste{
+ 
+display: flex;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+.a-f{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  font-size: 800;
+}
+.a-f:hover{
+  color: #44EAC2 !important;
+}
+.lif{
+  padding-bottom: 0.5rem;
+  color: white;
+}
+.footer-copy{
+  text-align: left;
+  color: white;
+}
+
+
+.body-section {
+    display: flex;
+    justify-content: center;
+    
+    padding: 0 0 1rem 0;
+}
+.w-100 {
+  width: 100%;
+  background: #f1f4f5;
+}
+.heading-container {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.arrow-buttons-container {
+  display: flex;
+  align-items: flex-end;
+  height: 4rem;
+}
+.button-circle {
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin: 0 0.25rem 0.5rem 0.25rem;
+}
+.kartice{
+    display: flex;
+    overflow: hidden;
+
+}
+.ol-h {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li-h{
+  flex: 1 0 10%;
+  background-color: white;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  display: list-item;
+}
+.ah1{
+  text-decoration: none;
+  cursor: pointer;
+}
+.img-h1{
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+
+}
+
+.card-body{
+  padding: 0.5rem;
+}
+
+.tag{
+  color: #002f34;
+  height: 18px;
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 0 5px;
+  margin-bottom: 0.25rem;
+  border: 1px solid #e0e0e0;
+}
+.card-end{
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.button-empty {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid #002f34;
+  color: #002f34;
+  cursor: pointer;
+  padding: 0.75rem;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.lista-kartica-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  width: 100%;
+  justify-content: center;
+}
+.li-grid{
+  position: relative;
+  flex: 1 0 10%;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0,0,0,.1);
+}
+.ol-grid{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-empty {
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid #002f34;
+    color: #002f34;
+    cursor: pointer;
+    padding: 0.75rem;
+    font-size: 15px;
+    box-sizing: border-box;
+}
