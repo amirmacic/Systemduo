@@ -93,30 +93,35 @@
                 <option>Ostalo</option>
             </optgroup>
         </select></label>
-        <label for="naslov">Naslov oglasa<br>
+        <label for="naslov" class="drugi">Naslov oglasa<br>
         <input name="title" id="naslov" type="text"></input></label>
         <label for="gorivo">Gorivo<br>
             <input name="fuel" id="gorivo" type="text"></input>
         </label>
-        <label for="kilometraza">Kilometraža<br>
+        <label for="kilometraza" class="drugi">Kilometraža<br>
             <input for="distancecovered" id="kilometraza" type="number"></input>
         </label>
         <label for="cijena">Cijena<br>
             <input name="price" id="cijena" type="number"></input>
         </label>
-        <label for="motor">Snaga motora(kW)<br>
+        <label for="motor" class="drugi">Snaga motora(kW)<br>
             <input name="engine" id="motor" type="number"></input>
         </label>
         <label for="vrata">Broj vrata<br>
-            <input name="door" id="vrata" type="number"></input>
+         <select name="door" id="vrata">
+              <option value="2">2</option>
+              <option value="4">4</option>
+              <option value="6">6</option>
+              <option value="Drugo">Drugo</option>
+            </select>
         </label>
-        <label for="slika">Dodaj sliku<br>
+        <label for="slika" class="drugi">Dodaj sliku<br>
         <input name="jpg" id="slika" type="file"></input>
         </label>
         <label for="opis">Opis<br>
         <textarea name="description" id="opis"></textarea>
         </label>
-        <input value="Dodaj" class="vehicle-submit" type="submit"></input>
+        <input value="Dodaj" class="vehicle-button" type="button"></input>
     </form>
 
 </div>
@@ -163,6 +168,7 @@
     </div>
 
 </footer>
+
 
 </body>
 </html>
